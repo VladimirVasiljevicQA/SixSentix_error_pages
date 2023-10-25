@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">44,169</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">Runner.runEnDe</td><td><a href="#m0">runScenario</a></td><td rowspan="2">1697615800746</td><td rowspan="2">17929</td></tr><tr class="failedeven"><td><a href="#m1">runScenario</a></td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">Runner.runEnDe</td><td><a href="#m2">runScenario</a></td><td rowspan="1">1697615792847</td><td rowspan="1">7897</td></tr></tbody>
+</table>
+<h2>Test</h2><h3 id="m0">Runner.runEnDe#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Go to -About Us- page with german language on app&quot;</td><td>&quot;Verify some page existent, on english and german&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Proxy element for: DefaultElementLocator &apos;By.xpath: //a[normalize-space()=&apos;Angebot anfordern&apos;]&apos;] but found [null]
+	at StepDefinitions.DeAboutUs.i_see_Über_uns_page(DeAboutUs.java:89)
+	at ✽.i see Über uns page(file:///D:/Eclipse-Java-Projekat/SixSentix/src/test/java/Features/EngAndGerVersions.feature:18)
+... Removed 5 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">Runner.runEnDe#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Go to -Contact- page with german language on app&quot;</td><td>&quot;Verify some page existent, on english and german&quot;</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.AssertionError: expected [Proxy element for: DefaultElementLocator &apos;By.xpath: //h1[normalize-space()=&apos;Wir freuen uns über Ihre Kontaktaufnahme&apos;]&apos;] but found [null]
+	at StepDefinitions.DeContact.i_see_Kontakt_page(DeContact.java:89)
+	at ✽.i see Kontakt page(file:///D:/Eclipse-Java-Projekat/SixSentix/src/test/java/Features/EngAndGerVersions.feature:27)
+... Removed 5 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">Runner.runEnDe#runScenario</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>&quot;Go to -About Us- page with english language on app&quot;</td><td>&quot;Verify some page existent, on english and german&quot;</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

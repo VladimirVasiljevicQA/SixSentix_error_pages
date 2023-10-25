@@ -1,0 +1,24 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 44.59 s <<< FAILURE! -- in TestSuite
+Runner.runEnDe.runScenario["Go to -About Us- page with german language on app", "Verify some page existent, on english and german"](2) -- Time elapsed: 17.93 s <<< FAILURE!
+java.lang.AssertionError: expected [Proxy element for: DefaultElementLocator 'By.xpath: //a[normalize-space()='Angebot anfordern']'] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:644)
+	at StepDefinitions.DeAboutUs.i_see_Über_uns_page(DeAboutUs.java:89)
+	at ✽.i see Über uns page(file:///D:/Eclipse-Java-Projekat/SixSentix/src/test/java/Features/EngAndGerVersions.feature:18)
+
+Runner.runEnDe.runScenario["Go to -Contact- page with german language on app", "Verify some page existent, on english and german"](3) -- Time elapsed: 17.89 s <<< FAILURE!
+java.lang.AssertionError: expected [Proxy element for: DefaultElementLocator 'By.xpath: //h1[normalize-space()='Wir freuen uns über Ihre Kontaktaufnahme']'] but found [null]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:644)
+	at StepDefinitions.DeContact.i_see_Kontakt_page(DeContact.java:89)
+	at ✽.i see Kontakt page(file:///D:/Eclipse-Java-Projekat/SixSentix/src/test/java/Features/EngAndGerVersions.feature:27)
+

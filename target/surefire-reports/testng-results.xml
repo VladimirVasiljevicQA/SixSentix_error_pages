@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-10-18T09:56:32 CEST" name="Suite" finished-at="2023-10-18T09:57:16 CEST" duration-ms="44169">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.runEnDe@2a3b5b47]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-10-18T09:56:32 CEST" name="Test" finished-at="2023-10-18T09:57:16 CEST" duration-ms="44169">
+      <class name="Runner.runEnDe">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:Runner.runEnDe@2a3b5b47]" started-at="2023-10-18T09:56:32 CEST" name="setUpClass" finished-at="2023-10-18T09:56:32 CEST" duration-ms="403" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@131a7516]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.runEnDe@2a3b5b47]" started-at="2023-10-18T09:56:32 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-18T09:56:40 CEST" duration-ms="7897" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Go to -About Us- page with english language on app"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify some page existent, on english and german"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.runEnDe@2a3b5b47]" started-at="2023-10-18T09:56:40 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-18T09:56:58 CEST" duration-ms="17929" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Go to -About Us- page with german language on app"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify some page existent, on english and german"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Proxy element for: DefaultElementLocator 'By.xpath: //a[normalize-space()='Angebot anfordern']'] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Proxy element for: DefaultElementLocator 'By.xpath: //a[normalize-space()='Angebot anfordern']'] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:644)
+at StepDefinitions.DeAboutUs.i_see_Über_uns_page(DeAboutUs.java:89)
+at ✽.i see Über uns page(file:///D:/Eclipse-Java-Projekat/SixSentix/src/test/java/Features/EngAndGerVersions.feature:18)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:Runner.runEnDe@2a3b5b47]" started-at="2023-10-18T09:56:58 CEST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-10-18T09:57:16 CEST" duration-ms="17885" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Go to -Contact- page with german language on app"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify some page existent, on english and german"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Proxy element for: DefaultElementLocator 'By.xpath: //h1[normalize-space()='Wir freuen uns über Ihre Kontaktaufnahme']'] but found [null]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Proxy element for: DefaultElementLocator 'By.xpath: //h1[normalize-space()='Wir freuen uns über Ihre Kontaktaufnahme']'] but found [null]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:644)
+at StepDefinitions.DeContact.i_see_Kontakt_page(DeContact.java:89)
+at ✽.i see Kontakt page(file:///D:/Eclipse-Java-Projekat/SixSentix/src/test/java/Features/EngAndGerVersions.feature:27)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:Runner.runEnDe@2a3b5b47]" started-at="2023-10-18T09:57:16 CEST" name="tearDownClass" finished-at="2023-10-18T09:57:16 CEST" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- Runner.runEnDe -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
